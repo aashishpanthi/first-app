@@ -1,0 +1,26 @@
+.activeLink{
+	color:#000;
+	position:relative;
+	text-decoration:none;
+	font-weight:bold;
+	transition: 1s;
+}
+
+.activeLink::before{
+	content: '';
+	width:100%;
+	position: absolute;
+	bottom:-1px;
+	height: 2px;
+	background: red;
+	left:0;
+}
+
+
+.myBrand{
+	font-size:2em;
+}
+
+.navbar{
+	background: transparent ;
+}

@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+$fontListHeading : 'Roboto', sans-serif;
+$headingColor : #3355ff;
+$navBarHeight : 50px;
+$headerFont : 'Fugaz One', cursive;
+$subHeading : 'Oswald', sans-serif;
+
+.home{
+	min-height: 90vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	margin-top:10vw;
+
+	.row{
+		min-height:80vh;
+	}
+	h1{
+		font-family: $headerFont ;
+		color:$headingColor;
+		line-height:35px;
+		padding:2px 3px;
+	}
+	p{
+		font-family: $subHeading;
+		padding:8px 5px;
+	}
+	
+	.square_btn{
+    display: inline-block;
+    padding: 10px 40px;
+	border-radius: 25px;
+    text-decoration: none;
+    color: #FFF;
+    font-size:1.1rem;
+    background-image: -webkit-linear-gradient(45deg, #22C1f7 0%, #228bf2 57%,#1025f2 100%);
+    background-image: linear-gradient(45deg, #22C1f7 0%, #228bf2 57%,#1025f2 100%);
+    transition: 1s ease-in-out;
+
+    &:hover {
+    background-image: -webkit-linear-gradient(45deg, #1025f2 0%, #228bf2 57%, #22C1f7 100%);
+    background-image: linear-gradient(45deg, #1025f2 0%, #228bf2 57%, #22C1f7 100%);
+    transition: 1s ease-in-out;
+	}
+}
+
+::selection{
+	color:blue;
+	text-decoration: underline;
+}
+
+
+	img{
+		position: relative;
+		width:100%;
+	}
+}
+
+.about{
+	h1{
+		font-family: $headerFont ;
+		color: $headingColor;
+		font-size:2rem;
+		margin:25px 2px;
+	}
+
+	div {
+			p{
+				font-size:1.3rem;
+				margin:10px 2px;
+				line-height:25px;
+				font-family: $subHeading;
+			}
+			ol{
+				margin:20px 3px;
+				padding:10px 25px;
+				li{
+					margin-bottom:30px;
+					h3{
+						font-size:1.25rem;
+						font-family: $fontListHeading;
+						color:#113355;
+					}
+					p{
+						font-size:1.1rem;
+						color:#004466;
+					}
+				}
+			}
+
+		}
+		::selection{
+			color:red;
+		}
+}
